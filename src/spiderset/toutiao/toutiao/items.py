@@ -9,4 +9,9 @@ import scrapy
 class ToutiaoItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+
+    # toutiaoSuggest fields
+    # 头条推荐爬虫字段
+    toutiaoSuggestResponseText = scrapy.Field()
+
     pass

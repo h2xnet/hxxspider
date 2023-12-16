@@ -19,6 +19,9 @@ NEWSPIDER_MODULE = "toutiao.spiders"
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+# 显示指定的类型的日志信息
+LOG_LEVEL = 'INFO'
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
@@ -62,9 +65,10 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    "toutiao.pipelines.ToutiaoPipeline": 300,
-#}
+# 开启管道
+ITEM_PIPELINES = {
+    "toutiao.pipelines.ToutiaoPipeline": 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
